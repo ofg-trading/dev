@@ -1,3 +1,30 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-md-5">
+        <img class= "center-block hidden-sm hidden-xs" src="../assets/ofg-large-logo-with-background.jpg" alt="">
+        <img class= "center-block hidden-xs hidden-md hidden-lg hidden-xl" src="../assets/ofg-large-logo-w-background-centered.jpg" alt="">
+        <img class= "center-block hidden-sm hidden-md hidden-lg hidden-xl" src="../assets/ofg-large-logo-w-background-centered-small.jpg" alt="">
+    </div>
+    <div class="col-md-7">
+      <div class="hidden-sm hidden-xs" style="height:60px"></div>
+      <div class="row">
+        <div class = "col-md-8">
+          <app-carousel class="hidden-sm hidden-xs"></app-carousel>
+        </div>
+        <div class = "col-md-4">
+          <img src="../assets/ofg-small-logo.jpg" alt="" class="hidden-sm hidden-xs">
+        </div>
+      </div>
+      <app-accordian></app-accordian>
+      <div class="row hidden-md hidden-lg hidden-xl">
+        <div class = "col-md-8">
+          <app-carousel></app-carousel>
+        </div>
+        <div class = "col-md-4">
+          <img src="../assets/ofg-small-logo.jpg" alt="">
+        </div>
+      </div>
+      <!--<app-carousel class="hidden-md hidden-lg hidden-xl"></app-carousel>-->
+    </div>
+  </div>
+</div>
