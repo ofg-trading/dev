@@ -6,12 +6,19 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { AccordianComponent } from './accordian/accordian.component';
 import { CarouselComponent } from './carousel/carousel.component';
+import { TabsComponent } from './tabs/tabs.component';
+import { Content } from './app-data-types';
+import { OpeningComponent } from './opening/opening.component';
+import { AnimationTestComponent } from './animation-test/animation-test.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AccordianComponent,
-    CarouselComponent
+    CarouselComponent,
+    TabsComponent,
+    OpeningComponent,
+    AnimationTestComponent
   ],
   imports: [
     BrowserModule,

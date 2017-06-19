@@ -1,11 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
 
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: #e1daa6;
+  background-color: #222222;
+  border: 1px solid #464545;
+  border-bottom-color: transparent;
+  cursor: default;
+}
+
 
 body { background: black !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
 
 /*
 inspired from https://codepen.io/Rowno/pen/Afykb 
 */
+
 .carousel-fade .carousel-inner .item {
   opacity: 0;
   transition-property: opacity;

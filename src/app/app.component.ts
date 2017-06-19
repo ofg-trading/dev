@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+
+  public onSkipAnimation() {
+    alert("Event Emitted");
+    var parent = document.getElementById("animationContainer");
+    var child = document.getElementById("openingAnimation");
+    parent.removeChild(child);
+  }
+
 }

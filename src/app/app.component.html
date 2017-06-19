@@ -1,30 +1,24 @@
-<div class="container">
-  <div class="row">
-    <div class="col-md-5">
-        <img class= "center-block hidden-sm hidden-xs" src="assets/ofg-large-logo-with-background.jpg" alt="">
-        <img class= "center-block hidden-xs hidden-md hidden-lg hidden-xl" src="assets/ofg-large-logo-w-background-centered.jpg" alt="">
-        <img class= "center-block hidden-sm hidden-md hidden-lg hidden-xl" src="assets/ofg-large-logo-w-background-centered-small.jpg" alt="">
-    </div>
-    <div class="col-md-7">
-      <div class="hidden-sm hidden-xs" style="height:60px"></div>
-      <div class="row">
-        <div class = "col-md-8">
-          <app-carousel class="hidden-sm hidden-xs"></app-carousel>
-        </div>
-        <div class = "col-md-4">
-          <img src="assets/ofg-small-logo.jpg" alt="" class="hidden-sm hidden-xs">
-        </div>
+<!--<img  class="center-block"  src="assets/ofg-opening-background.jpg" alt="" style="position:relative;z-index:-1">-->
+<div id="animationContainer">
+  <app-animation-test id="openingAnimation" (onSkipAnimation)="onSkipAnimation()"></app-animation-test>
+</div>
+<!--<app-opening></app-opening>-->
+<div id="mainWebsite" class="website website-transition">
+<!--<div>-->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+          <img class= "center-block hidden-sm hidden-xs" src="assets/ofg-large-logo-with-background.jpg" alt="">
+          <img class= "center-block hidden-xs hidden-md hidden-lg hidden-xl" src="assets/ofg-large-logo-w-background-centered.jpg" alt="">
+          <img class= "center-block hidden-sm hidden-md hidden-lg hidden-xl" src="assets/ofg-large-logo-w-background-centered-small.jpg" alt="">
       </div>
-      <app-accordian></app-accordian>
-      <div class="row hidden-md hidden-lg hidden-xl">
-        <div class = "col-md-8">
-          <app-carousel></app-carousel>
-        </div>
-        <div class = "col-md-4">
-          <img src="assets/ofg-small-logo.jpg" alt="">
-        </div>
+      <div class="col-md-7">
+        <div class="hidden-sm hidden-xs" style="height:60px"></div>
+        <app-carousel class="hidden-sm hidden-xs"></app-carousel>
+        <app-accordian class="hidden-lg hidden-xl"></app-accordian>
+        <app-tabs class="hidden-xs hidden-sm hidden-md"></app-tabs>
+        <app-carousel class="hidden-md hidden-lg hidden-xl"></app-carousel>
       </div>
-      <!--<app-carousel class="hidden-md hidden-lg hidden-xl"></app-carousel>-->
     </div>
   </div>
 </div>

@@ -7,23 +7,25 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class CarouselComponent implements OnInit {
 
-  @Input() images:string[] = ["assets/ofg-lion.jpg",
-                              "assets/ofg-person2.jpg",
-                              "assets/ofg-currency-gears.jpg",
-                              "assets/ofg-currency.jpg",
-                              "assets/ofg-sunrise.jpg",
-                              "assets/ofg-columns-light.jpg",
-                              "assets/ofg-flags.jpg",
-                              "assets/ofg-clock.jpg",
-                              "assets/ofg-columns-dark.jpg",
-                              "assets/ofg-person1.jpg",
-                              "assets/ofg-gold-bars.jpg",
-                              "assets/ofg-computers.jpg"]
+  @Input() images:string[] = ["assets/ofg-lion-w-logo.jpg",
+                              "assets/ofg-person2-w-logo.jpg",
+                              "assets/ofg-currency-gears-w-logo.jpg",
+                              "assets/ofg-currency-w-logo.jpg",
+                              "assets/ofg-sunrise-w-logo.jpg",
+                              "assets/ofg-columns-light-w-logo.jpg",
+                              "assets/ofg-flags-w-logo.jpg",
+                              "assets/ofg-clock-w-logo.jpg",
+                              "assets/ofg-columns-dark-w-logo.jpg",
+                              "assets/ofg-person1-w-logo.jpg",
+                              "assets/ofg-gold-bars-w-logo.jpg",
+                              "assets/ofg-computers-w-logo.jpg"]
 
 
   constructor() { }
 
   ngOnInit() {
+    let x: string = "test";
+    x = "test2"
   }
 
 }
