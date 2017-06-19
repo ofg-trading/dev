@@ -19,7 +19,7 @@
       "mobile": false,
       "styles": [
         "../node_modules/bootstrap/dist/css/darkly.bootstrap.css",
-        "styles.css"
+        "./styles.css"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.js",
