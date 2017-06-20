@@ -9,7 +9,6 @@
 
 .website-transition {
   animation: websiteAnimation 24s linear ;
-  animation-delay: 0s;
 }
 
 @keyframes 

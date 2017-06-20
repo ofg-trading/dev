@@ -14,7 +14,7 @@ export class AnimationTestComponent implements OnInit {
   }
 
   skipAnimation() {
-    alert("skip pressed")
+    // alert("skip pressed")
     this.onSkipAnimation.emit();
   }
 
