@@ -4,15 +4,49 @@
   background-position: center center;
   color: transparent; 
   opacity: 0;
-  animation: backgroundAnimation 24s linear ;
   left: 50%;
   margin-left: -562px;  
   position: absolute;
   z-index: 0;
 }
 
+.logo-lg {
+  left: 50%;
+  margin-left: 400px;  
+  top: 300px;
+  position: absolute;
+  z-index: 10;
+}
+
+.logo-md {
+  position:relative;
+  left:85%;
+  top:121px;
+  margin-left: -562px;  
+  z-index: 10;
+}
+
+.logo-xs {
+  top: 520px;
+  left: 50%;
+  margin-left: -47px;  
+  position: absolute;
+  z-index: 10;
+}
+
+.background-transition {
+  animation: backgroundAnimation 24s linear;
+}
+
+.logo-closing-transition {
+  animation: logoClosingAnimation 23s linear;
+}
+
+.crossfade-transition > figure {
+  animation: imageAnimation 30s linear;
+}
+
 .crossfade > figure {
-  animation: imageAnimation 30s linear ;
   backface-visibility: hidden;
   background-size: cover;
   background-position: center center;
@@ -63,6 +97,27 @@ imageAnimation{ 0% {
 backgroundAnimation{ 0% {
  animation-timing-function: ease-in;
  opacity: 0;
+    }
+    5% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    }
+    90% {
+    opacity: 1
+    }
+    95% {
+    opacity: 0
+    }
+    100% {
+    opacity: 0
+    }
+}
+ 
+@keyframes
+logoClosingAnimation{ 
+    0% {
+    animation-timing-function: linear;
+    opacity: 1;
     }
     5% {
     animation-timing-function: ease-out;

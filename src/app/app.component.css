@@ -7,13 +7,34 @@
   z-index: 5;
 }
 
+.website-no-opening {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0px;
+  z-index: 5;
+  animation: websiteTransition 1s linear;
+}
+
+.logo-small-top-adjust {
+  position: relative;
+  top: -120px; 
+}
+
 .website-transition {
-  animation: websiteAnimation 24s linear ;
+  animation: websiteTransitionWithDelay 29s linear;
 }
 
 @keyframes 
-websiteAnimation {
+websiteTransitionWithDelay {
     0% {opacity: 0}
     95% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@keyframes 
+websiteTransition {
+    0% {opacity: 0}
     100% {opacity: 1}
 }
