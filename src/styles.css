@@ -1,5 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 
+.panel-default > .panel-heading {
+  color: #e1daa6;
+  background-color: #222222;
+  border-color: #464545;
+}
+
+.panel-body {
+    background-color: #000000;
+    color: white;
+}
+
+
+
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
@@ -68,23 +81,3 @@ now override the 3.3 new styles for modern browsers & apply opacity
     }
 }
 
-/* just for demo purpose */
-    /*html,
-    body,
-    .carousel,
-    .carousel-inner,
-    .carousel-inner .item {
-      height: 100%;
-    }
-
-    .item:nth-child(1) {
-      background: blue;
-    }
-
-    .item:nth-child(2) {
-      background: red;
-    }
-
-    .item:nth-child(3) {
-      background: orange;
-    }*/

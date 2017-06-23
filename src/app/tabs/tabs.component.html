@@ -2,7 +2,8 @@
   <ul class="nav nav-tabs">
     <li [class]="(i==0) ? 'active':''" *ngFor="let c of content | slice:1; let i=index">
        <a *ngIf="i==0" attr.href="#Tab{{i}}" data-toggle="tab">Welcome</a>
-       <a *ngIf="i>0" attr.href="#Tab{{i+1}}" data-toggle="tab">{{c.title}}</a>
+       <a class="hidden-xs hidden-sm hidden-md" *ngIf="i>0" attr.href="#Tab{{i+1}}" data-toggle="tab">{{c.title}}</a>
+       <a class="hidden-xs hidden-sm hidden-lg" *ngIf="i>0" attr.href="#Tab{{i+1}}" data-toggle="tab">{{c.abrev}}</a>
     </li>
   </ul>
   <div id="myTabContent" class="tab-content">

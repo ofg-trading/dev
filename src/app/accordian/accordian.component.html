@@ -1,4 +1,26 @@
+  <!--<div  *ngFor="let c of content; let i=index">
+    <h4>{{c.title}}{{i}}</h4>
+    <p>{{c.text}}</p>
+  </div>-->
+
 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default" *ngFor="let c of content; let i=index">
+    <div class="panel-heading" role="tab" attr.id="heading{{i}}">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" attr.href="#collapse{{i}}" aria-expanded="false" attr.aria-controls="collapse{{i}}">
+          {{c.title}}
+        </a>
+      </h4>
+    </div>
+    <div attr.id="collapse{{i}}" class="panel-collapse collapse" role="tabpanel" attr.aria-labelledby="heading{{i}}">
+      <div class="panel-body">
+        {{c.text}}
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
   <div class="panel panel-default">
     <div class="panel-heading" role="tab" id="headingOne">
       <h4 class="panel-title">
@@ -9,7 +31,7 @@
     </div>
     <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
       <div class="panel-body">
-        Welcome to the OFG Trading, LLC website.  Please feel free to browse each page on our site as an introduction to our company.
+        Welcome to the OFG Trading, LLC website.  Please feel free to browse each page on our site as an introduction to our company.      
       </div>
     </div>
   </div>
@@ -93,4 +115,4 @@
     </div>
   </div>
 
-</div>
+</div>-->
