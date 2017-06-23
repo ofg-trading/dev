@@ -8,24 +8,20 @@
 }
 
 .website-no-opening {
-  /*position: relative;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;*/
   top: 0px;
   z-index: 5;
   animation: websiteTransition 1s linear;
 }
 
-.background-w-logo-xs {
+.background-w-logo-sm {
   left: 50%;
   margin-left: -309px;  
   position: relative;
 }
 
 .logo-small-top-adjust {
-  position: relative;
-  top: -120px; 
+  position: absolute;
+  top: px; 
 }
 
 .website-transition {
