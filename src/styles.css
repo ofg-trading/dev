@@ -7,11 +7,9 @@
 }
 
 .panel-body {
-    background-color: #000000;
-    color: white;
+  background-color: #000000;
+  color: white;
 }
-
-
 
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
@@ -22,7 +20,6 @@
   border-bottom-color: transparent;
   cursor: default;
 }
-
 
 body { background: black !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
 
