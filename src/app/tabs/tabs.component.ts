@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+
 import { Content } from "../app-data-types"
 import { AppService } from "../app.service"
 
@@ -20,5 +21,6 @@ export class TabsComponent implements OnInit {
 
   getContent() {
     this.contentService.getContent().then(content => this.content = content);
+    this.contentService.getContent().then(function(content) { this.content = content});
   }
 }

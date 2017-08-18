@@ -79,16 +79,16 @@
 }
 
 .crossfade > figure:nth-child(1) { 
-  background-image: url('assets/ofg-bear.jpg'); 
+  background-image: url('assets/screen-capture/ofg-bull.jpg'); 
   animation-delay: 1s;
 }
 .crossfade > figure:nth-child(2) {
   animation-delay: 8s;
-  background-image: url('assets/ofg-bull.jpg');
+  background-image: url('assets/screen-capture/ofg-bear.jpg');
 }
 .crossfade > figure:nth-child(3) {
   animation-delay: 15s;
-  background-image: url('assets/ofg-lion-color.jpg');
+  background-image: url('assets/screen-capture/ofg-lion-color.jpg');
 }
 
 @keyframes

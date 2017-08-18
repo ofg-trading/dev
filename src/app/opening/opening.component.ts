@@ -6,9 +6,9 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./opening.component.css']
 })
 export class OpeningComponent implements OnInit {
-  @Input() images:string[] = ["assets/ofg-bear.jpg",
-                              "assets/ofg-bull.jpg",
-                              "assets/ofg-lion-color.jpg"
+  @Input() images:string[] = ["assets/screen-capture/ofg-bear.jpg",
+                              "assets/screen-capture/ofg-bull.jpg",
+                              "assets/screen-capture/ofg-lion-color.jpg"
                              ]
 
 
