@@ -8,8 +8,8 @@ import { AccordianComponent } from './accordian/accordian.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { Content } from './app-data-types';
-import { OpeningComponent } from './opening/opening.component';
-import { AnimationTestComponent } from './animation-test/animation-test.component';
+// import { AnimationTestComponent } from './animation-test/animation-test.component';
+import { OpeningAnimationComponent } from './opening-animation/opening-animation.component';
 
 @NgModule({
   declarations: [
@@ -17,8 +17,8 @@ import { AnimationTestComponent } from './animation-test/animation-test.componen
     AccordianComponent,
     CarouselComponent,
     TabsComponent,
-    OpeningComponent,
-    AnimationTestComponent
+    // AnimationTestComponent,
+    OpeningAnimationComponent
   ],
   imports: [
     BrowserModule,
